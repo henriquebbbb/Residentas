@@ -1,0 +1,18 @@
+[build]
+  publish = "public"
+
+[[redirects]]
+  from = "/portugal/book"
+  to = "/portugal/book/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/us/book"
+  to = "/us/book/index.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"

@@ -1,0 +1,60 @@
+backend:
+  name: github
+  repo: henriquebbbb/residentas-website
+  branch: main
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "properties_pt"
+    label: "Propriedades Lisboa"
+    folder: "content/properties"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - { label: "Nome", name: "title", widget: "string" }
+      - { label: "Bairro", name: "neighbourhood", widget: "string" }
+      - { label: "Descrição", name: "description", widget: "text" }
+      - { label: "Preço base (€)", name: "price", widget: "number" }
+      - { label: "Foto hero", name: "hero_image", widget: "image" }
+      - label: "Categorias de apartamentos"
+        name: "apartments"
+        widget: "list"
+        fields:
+          - { label: "Nome", name: "name", widget: "string" }
+          - { label: "Descrição", name: "description", widget: "text" }
+          - { label: "Foto", name: "image", widget: "image" }
+          - { label: "Dorme até", name: "sleeps", widget: "number" }
+
+  - name: "reviews"
+    label: "Reviews"
+    folder: "content/reviews"
+    create: true
+    slug: "{{year}}-{{month}}-{{slug}}"
+    fields:
+      - { label: "Nome do hóspede", name: "author", widget: "string" }
+      - { label: "Cidade / País", name: "location", widget: "string" }
+      - { label: "Propriedade", name: "property", widget: "select", options: ["Arco do Bandeira", "Áurea", "Apóstolos", "São Pedro"] }
+      - { label: "Review", name: "body", widget: "text" }
+      - { label: "Rating", name: "rating", widget: "number", min: 1, max: 5 }
+      - { label: "Data", name: "date", widget: "date" }
+
+  - name: "settings"
+    label: "Definições"
+    files:
+      - label: "Preços"
+        name: "prices"
+        file: "content/settings/prices.json"
+        fields:
+          - { label: "ARC — Preço base (€)", name: "arc_base", widget: "number" }
+          - { label: "AUR — Preço base (€)", name: "aur_base", widget: "number" }
+          - { label: "APO — Preço base (€)", name: "apo_base", widget: "number" }
+          - { label: "SPA — Preço base (€)", name: "spa_base", widget: "number" }
+      - label: "Guesty Widget"
+        name: "guesty"
+        file: "content/settings/guesty.json"
+        fields:
+          - { label: "Widget PT — siteUrl", name: "pt_site_url", widget: "string" }
+          - { label: "Widget US — siteUrl", name: "us_site_url", widget: "string" }
+          - { label: "Cor do widget", name: "color", widget: "string", default: "#E55F2C" }

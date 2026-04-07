@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orlando & Kissimmee Vacation Homes — Residentas</title>
+  <!-- SEO -->
+  <meta name="description" content="Modern homes near Walt Disney World, Universal and SeaWorld. Private gated community, pool access, sleeps 8–10. Book direct.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://residentas.com/us/orlando/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Orlando & Kissimmee Vacation Homes — Residentas">
+  <meta property="og:description" content="Modern homes near Walt Disney World, Universal and SeaWorld. Private gated community, pool access, sleeps 8–10. Book direct.">
+  <meta property="og:image" content="/images/og-orlando.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Residentas">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Orlando & Kissimmee Vacation Homes — Residentas">
+  <meta name="twitter:description" content="Modern homes near Walt Disney World, Universal and SeaWorld. Private gated community, pool access, sleeps 8–10. Book direct.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sand:#FAF7F4;--sand-dark:#F0EBE4;--sand-border:#E5DDD5;
+  --orange:#E55F2C;--orange-light:rgba(229,95,44,0.10);--orange-dark:#C04A18;
+  --charcoal:#1C1C1C;--charcoal-mid:#3A3A3A;--muted:#888880;--muted-light:#B8B4AE;
+  --serif:'Cormorant Garamond',Georgia,serif;--sans:'DM Sans',sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--sand);color:var(--charcoal);font-family:var(--sans);font-size:15px;line-height:1.7;overflow-x:hidden}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:72px;background:rgba(250,247,244,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--sand-border);box-shadow:0 2px 24px rgba(28,28,28,0.05)}
+.nav-back{font-size:12px;color:var(--muted);text-decoration:none;transition:color 0.2s}
+.nav-back:hover{color:var(--charcoal)}
+.nav-links{display:flex;align-items:center;gap:36px;list-style:none}
+.nav-links a{font-size:13px;color:var(--muted);text-decoration:none;letter-spacing:0.04em;transition:color 0.2s}
+.nav-links a:hover{color:var(--charcoal)}
+.nav-cta{background:var(--orange)!important;color:#fff!important;padding:9px 22px;border-radius:4px;font-weight:500;transition:background 0.2s!important}
+.nav-cta:hover{background:var(--orange-dark)!important}
+
+/* HERO */
+.hero{padding-top:72px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;aspect-ratio:3/2;min-height:520px;max-height:88vh}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#2C3E50 0%,#3D5A70 40%,#5B8A9A 100%)}
+.hero-ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.18);pointer-events:none}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(20,18,16,0.82) 0%,rgba(20,18,16,0.25) 55%,transparent 100%)}
+.hero-content{position:relative;padding:0 48px 56px;color:#fff}
+.hero-breadcrumb{font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.hero-breadcrumb a{color:rgba(255,255,255,0.45);text-decoration:none}
+.hero-badge{display:inline-block;background:var(--orange);color:#fff;font-size:11px;padding:4px 12px;border-radius:3px;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;margin-bottom:16px}
+.hero-title{font-family:var(--serif);font-size:clamp(52px,6.5vw,88px);font-weight:300;line-height:1;margin-bottom:12px}
+.hero-sub{font-size:16px;color:rgba(255,255,255,0.65);max-width:520px;line-height:1.7}
+
+/* BOOKING BAR */
+.booking-bar{background:#fff;border-bottom:1px solid var(--sand-border);padding:0 48px;display:flex;align-items:center;justify-content:space-between;height:72px;position:sticky;top:72px;z-index:50;box-shadow:0 2px 16px rgba(28,28,28,0.06)}
+.booking-bar-tabs{display:flex}
+.booking-bar-tab{font-size:13px;color:var(--muted);text-decoration:none;padding:0 20px;height:72px;display:flex;align-items:center;border-bottom:2px solid transparent;transition:color 0.2s,border-color 0.2s}
+.booking-bar-tab:hover,.booking-bar-tab.active{color:var(--charcoal);border-color:var(--orange)}
+.btn-book{background:var(--orange);color:#fff;padding:12px 28px;border-radius:4px;text-decoration:none;font-size:13px;font-weight:500;letter-spacing:0.06em;transition:background 0.2s}
+.btn-book:hover{background:var(--orange-dark)}
+
+/* MAIN CONTENT */
+.prop-content{max-width:1200px;margin:0 auto;padding:72px 48px;display:grid;grid-template-columns:1fr 360px;gap:80px;align-items:start}
+.prop-sidebar{position:sticky;top:160px}
+.prop-intro{font-family:var(--serif);font-size:26px;font-weight:300;font-style:italic;line-height:1.5;color:var(--charcoal);margin-bottom:32px;padding-bottom:32px;border-bottom:1px solid var(--sand-border)}
+.prop-desc-text{font-size:15px;color:var(--muted);line-height:1.85;margin-bottom:16px}
+.prop-desc-text strong{color:var(--charcoal);font-weight:500}
+.gallery-label{font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--muted);margin-bottom:20px;display:flex;align-items:center;gap:10px}
+.gallery-label::before{content:'';display:block;width:20px;height:1px;background:var(--orange)}
+.section-mini-title{font-family:var(--serif);font-size:32px;font-weight:300;color:var(--charcoal);margin-bottom:24px}
+.highlights-strip{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px;padding-top:28px;border-top:1px solid var(--sand-border)}
+.highlight-pill{background:var(--sand-dark);border:1px solid var(--sand-border);padding:8px 16px;border-radius:4px;font-size:12px;color:var(--charcoal-mid);display:flex;align-items:center;gap:8px}
+.highlight-pill::before{content:'';width:5px;height:5px;background:var(--orange);border-radius:50%;flex-shrink:0}
+
+/* GALLERY */
+.gallery-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:4px;border-radius:8px;overflow:hidden}
+.gallery-item{position:relative;overflow:hidden;cursor:pointer;aspect-ratio:3/2;background:var(--sand-dark);display:flex;align-items:center;justify-content:center}
+.gallery-item:first-child{grid-row:span 2;aspect-ratio:auto}
+.gallery-ph{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted-light)}
+.gallery-see-all{position:absolute;inset:0;background:rgba(28,28,28,0.55);display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px;letter-spacing:0.08em;text-transform:uppercase}
+
+/* ATTRACTIONS GRID */
+.attractions-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:0}
+.attraction-card{background:#fff;border:1px solid var(--sand-border);border-radius:8px;overflow:hidden}
+.attraction-img{aspect-ratio:3/2;background:var(--sand-dark);position:relative;display:flex;align-items:center;justify-content:center}
+.attraction-img-ph{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted-light)}
+.attraction-body{padding:16px 20px}
+.attraction-name{font-family:var(--serif);font-size:19px;font-weight:400;color:var(--charcoal);margin-bottom:4px}
+.attraction-dist{display:inline-block;background:var(--orange-light);color:var(--orange-dark);font-size:11px;padding:3px 9px;border-radius:3px;font-weight:500;margin-bottom:8px}
+.attraction-desc{font-size:13px;color:var(--muted);line-height:1.6}
+
+/* AREA BLOCK */
+.area-block{margin-top:64px;background:var(--sand-dark);border-radius:12px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr}
+.area-text{padding:48px}
+.area-eyebrow{font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--orange);margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.area-eyebrow::before{content:'';display:block;width:18px;height:1px;background:var(--orange)}
+.area-title{font-family:var(--serif);font-size:32px;font-weight:300;color:var(--charcoal);margin-bottom:20px;line-height:1.2}
+.area-body{font-size:14px;color:var(--muted);line-height:1.8;margin-bottom:14px}
+.area-points{display:flex;flex-direction:column;gap:12px;margin-top:20px}
+.area-point{display:flex;align-items:flex-start;gap:12px;font-size:13px;color:var(--charcoal-mid)}
+.area-dot{width:6px;height:6px;background:var(--orange);border-radius:50%;margin-top:7px;flex-shrink:0}
+.area-img{position:relative;overflow:hidden;background:var(--sand-dark);aspect-ratio:3/2;display:flex;align-items:center;justify-content:center}
+.area-img-ph{font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted-light)}
+.area-img-label{position:absolute;bottom:20px;left:20px;background:rgba(250,247,244,0.92);backdrop-filter:blur(8px);padding:6px 12px;border-radius:3px;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--charcoal);font-weight:500}
+
+/* DISTANCE TABLE */
+.dist-section{margin-top:64px}
+.dist-table{width:100%;border-collapse:collapse;margin-top:24px}
+.dist-table tr{border-bottom:1px solid var(--sand-border)}
+.dist-table tr:last-child{border-bottom:none}
+.dist-table td{padding:16px 0;font-size:14px}
+.dist-name{color:var(--charcoal);font-weight:500}
+.dist-note{font-size:12px;color:var(--muted);margin-top:2px}
+.dist-time{font-family:var(--serif);font-size:24px;font-weight:300;color:var(--orange);text-align:right;white-space:nowrap}
+
+/* REVIEWS */
+.reviews-section{margin-top:64px}
+.review-card{background:#fff;border:1px solid var(--sand-border);border-radius:8px;padding:28px;margin-bottom:16px}
+.review-stars{display:flex;gap:3px;margin-bottom:14px}
+.review-stars span{width:13px;height:13px;background:var(--orange);clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);display:block}
+.review-text{font-family:var(--serif);font-size:17px;font-style:italic;font-weight:300;color:var(--charcoal);line-height:1.6;margin-bottom:16px}
+.review-author{font-size:12px;font-weight:500;color:var(--charcoal)}
+.review-meta{font-size:11px;color:var(--muted);margin-top:2px}
+
+/* SIDEBAR */
+.sidebar-card{background:#fff;border:1px solid var(--sand-border);border-radius:10px;overflow:hidden;margin-bottom:20px}
+.sidebar-card-head{padding:20px 24px 16px;border-bottom:1px solid var(--sand-border)}
+.sidebar-card-title{font-family:var(--serif);font-size:20px;font-weight:400;color:var(--charcoal);margin-bottom:4px}
+.sidebar-card-sub{font-size:12px;color:var(--muted)}
+.sidebar-card-body{padding:20px 24px}
+.sidebar-divider{height:1px;background:var(--sand-border);margin:16px 0}
+.sidebar-feature-list{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:20px}
+.sidebar-feature-list li{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:10px}
+.sidebar-feature-list li::before{content:'';width:5px;height:5px;background:var(--orange);border-radius:50%;flex-shrink:0}
+.sidebar-book-btn{display:block;width:100%;background:var(--orange);color:#fff;padding:14px;border-radius:5px;text-align:center;text-decoration:none;font-size:14px;font-weight:500;transition:background 0.2s}
+.sidebar-book-btn:hover{background:var(--orange-dark)}
+.sidebar-direct-note{text-align:center;margin-top:10px;font-size:12px;color:var(--muted)}
+.sidebar-direct-note strong{color:var(--orange-dark)}
+.sidebar-perks{background:var(--sand-dark);border:1px solid var(--sand-border);border-radius:10px;padding:20px 24px}
+.sidebar-perks-title{font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--charcoal);margin-bottom:16px}
+.perk-item{display:flex;align-items:flex-start;gap:12px;margin-bottom:14px}
+.perk-item:last-child{margin-bottom:0}
+.perk-icon{width:28px;height:28px;background:var(--orange-light);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.perk-icon svg{width:14px;height:14px;stroke:var(--orange);fill:none;stroke-width:1.5}
+.perk-label{font-size:13px;font-weight:500;color:var(--charcoal)}
+.perk-sub{font-size:12px;color:var(--muted)}
+
+footer{background:var(--charcoal);border-top:1px solid rgba(255,255,255,0.06);padding:48px;margin-top:80px}
+.footer-links-row{display:flex;gap:24px;margin-bottom:24px;flex-wrap:wrap}
+.footer-links-row a{font-size:13px;color:rgba(255,255,255,0.45);text-decoration:none;transition:color 0.2s}
+.footer-links-row a:hover{color:#fff}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:24px;border-top:1px solid rgba(255,255,255,0.06)}
+.footer-legal{font-size:12px;color:rgba(255,255,255,0.25)}
+.footer-orange-dot{width:8px;height:8px;background:var(--orange);border-radius:50%}
+
+/* EXIT POPUP */
+#exit-overlay{display:none;position:fixed;inset:0;background:rgba(20,18,16,0.6);z-index:1000;backdrop-filter:blur(4px);align-items:center;justify-content:center}
+#exit-modal{background:var(--sand);max-width:480px;width:calc(100% - 40px);border-radius:12px;overflow:hidden;transform:translateY(20px);opacity:0;transition:transform 0.35s ease,opacity 0.35s ease}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.hero-content>*{animation:fadeUp 0.6s ease both}
+.hero-breadcrumb{animation-delay:0.05s}
+.hero-badge{animation-delay:0.1s}
+.hero-title{animation-delay:0.2s}
+.hero-sub{animation-delay:0.3s}
+</style>
+  <!-- Google Analytics GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7N7GGPVHJG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7N7GGPVHJG');
+  </script>
+</head>
+<body>
+
+<nav>
+  <a href="/us/" class="nav-back">← Orlando</a>
+  <ul class="nav-links">
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#attractions">Attractions</a></li>
+    <li><a href="#location">Location</a></li>
+    <li><a href="#book" class="nav-cta">Check Availability</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-ph">Kissimmee / Orlando hero photo coming soon</div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-breadcrumb"><a href="/">Residentas</a><span>/</span><a href="/us/">US</a><span>/</span><span>Orlando</span></div>
+    <div class="hero-badge">Orlando Area · Florida</div>
+    <h1 class="hero-title">Orlando,<br>Florida</h1>
+    <p class="hero-sub">The theme park capital of the world. Modern vacation homes in the Orlando area, minutes from Walt Disney World and everything Central Florida has to offer.</p>
+  </div>
+</div>
+
+<div class="booking-bar" id="book">
+  <div class="booking-bar-tabs">
+    <a href="#overview" class="booking-bar-tab active">Overview</a>
+    <a href="#attractions" class="booking-bar-tab">Attractions</a>
+    <a href="#location" class="booking-bar-tab">Location</a>
+    <a href="#reviews" class="booking-bar-tab">Reviews</a>
+  </div>
+  <a href="#book" class="btn-book">Check Availability →</a>
+</div>
+
+<div class="prop-content" id="overview">
+  <div class="prop-main">
+
+    <p class="prop-intro">"The theme park capital of the world, and the best base for it is a home, not a hotel room."</p>
+
+    <p class="prop-desc-text">Located in Kissimmee, our homes put you at the centre of everything Orlando has to offer. A short drive from Walt Disney World, Universal Studios, SeaWorld and every major attraction in Central Florida.</p>
+
+    <p class="prop-desc-text">Unlike a hotel, our homes give groups and families the <strong>space to actually live during their stay</strong>, full kitchens, open-plan living areas, multiple bedrooms and access to a shared outdoor pool and gym. Whether you're a family of 6 or a group of 10, we have the right home for your trip.</p>
+
+    <p class="prop-desc-text">Contactless check-in means no key collection, no queues. <strong>Your secure keypad code arrives the day before check-in</strong>, arrive on your own schedule and start your holiday immediately.</p>
+
+    <div class="highlights-strip">
+      <div class="highlight-pill">Orlando Area, Florida</div>
+      <div class="highlight-pill">Residential community</div>
+      <div class="highlight-pill">Pool access & gym</div>
+      <div class="highlight-pill">Sleeps 8–10</div>
+      <div class="highlight-pill">3 bedrooms</div>
+      <div class="highlight-pill">Full kitchen</div>
+      <div class="highlight-pill">~15 min to Disney</div>
+      <div class="highlight-pill">Contactless check-in</div>
+      <div class="highlight-pill">Free parking</div>
+    </div>
+
+    <!-- GALLERY -->
+    <div style="margin-top:56px;" id="gallery">
+      <div class="gallery-label">Photo Gallery</div>
+      <div class="gallery-grid">
+        <div class="gallery-item"><div class="gallery-ph">Hero photo coming soon</div></div>
+        <div class="gallery-item"><div class="gallery-ph">Pool area</div></div>
+        <div class="gallery-item"><div class="gallery-ph">Living room</div></div>
+        <div class="gallery-item"><div class="gallery-ph">Kitchen</div></div>
+        <div class="gallery-item"><div class="gallery-see-all">+ All Photos</div></div>
+      </div>
+    </div>
+
+    <!-- ATTRACTIONS -->
+    <div style="margin-top:64px;" id="attractions">
+      <div class="gallery-label">Things to Do</div>
+      <h2 class="section-mini-title">Every major attraction<br>within easy reach.</h2>
+      <div class="attractions-grid">
+
+        <div class="attraction-card">
+          <div class="attraction-img"><div class="attraction-img-ph">Walt Disney World · Photo coming soon</div></div>
+          <div class="attraction-body">
+            <div class="attraction-name">Walt Disney World</div>
+            <div class="attraction-dist">~15 min drive</div>
+            <p class="attraction-desc">Magic Kingdom, EPCOT, Hollywood Studios and Animal Kingdom, four parks, endless memories. The world's most visited theme park resort, right on your doorstep.</p>
+          </div>
+        </div>
+
+        <div class="attraction-card">
+          <div class="attraction-img"><div class="attraction-img-ph">Universal Orlando · Photo coming soon</div></div>
+          <div class="attraction-body">
+            <div class="attraction-name">Universal Orlando</div>
+            <div class="attraction-dist">~25 min drive</div>
+            <p class="attraction-desc">Universal Studios, Islands of Adventure and the new Epic Universe, home to the Wizarding World of Harry Potter, Jurassic World and much more.</p>
+          </div>
+        </div>
+
+        <div class="attraction-card">
+          <div class="attraction-img"><div class="attraction-img-ph">SeaWorld Orlando · Photo coming soon</div></div>
+          <div class="attraction-body">
+            <div class="attraction-name">SeaWorld Orlando</div>
+            <div class="attraction-dist">~20 min drive</div>
+            <p class="attraction-desc">Marine life encounters, thrill rides and the Aquatica water park next door. A full day out for families of all ages.</p>
+          </div>
+        </div>
+
+        <div class="attraction-card">
+          <div class="attraction-img"><div class="attraction-img-ph">LEGOLAND Florida · Photo coming soon</div></div>
+          <div class="attraction-body">
+            <div class="attraction-name">LEGOLAND Florida</div>
+            <div class="attraction-dist">~35 min drive</div>
+            <p class="attraction-desc">Built for younger children, rides, shows, a water park and the chance to build and explore in a world made entirely of LEGO bricks.</p>
+          </div>
+        </div>
+
+        <div class="attraction-card">
+          <div class="attraction-img"><div class="attraction-img-ph">Orlando Premium Outlets · Photo coming soon</div></div>
+          <div class="attraction-body">
+            <div class="attraction-name">Premium Outlets</div>
+            <div class="attraction-dist">~15 min drive</div>
+            <p class="attraction-desc">Two outlet centres, Vineland Ave and International Drive, with hundreds of brands at reduced prices. A must for shoppers in the group.</p>
+          </div>
+        </div>
+
+        <div class="attraction-card">
+          <div class="attraction-img"><div class="attraction-img-ph">I-Drive / International Drive · Photo coming soon</div></div>
+          <div class="attraction-body">
+            <div class="attraction-name">International Drive</div>
+            <div class="attraction-dist">~20 min drive</div>
+            <p class="attraction-desc">Orlando's entertainment corridor, mini golf, the Icon Park observation wheel, Ripley's Believe It or Not, restaurants and nightlife for every taste.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- AREA BLOCK -->
+    <div class="area-block" id="location">
+      <div class="area-text">
+        <div class="area-eyebrow">Location</div>
+        <h3 class="area-title">Located in Kissimmee, right in the heart of it all.</h3>
+        <p class="area-body">Kissimmee sits at the heart of the Orlando metro area, close enough to every park for a relaxed morning drive, far enough from the tourist strip to come home to a quiet, residential community.</p>
+        <p class="area-body">Our homes are located in Kissimmee, giving you the most convenient base for exploring everything Orlando has to offer. Close enough to the parks for a stress-free morning start, quiet enough for a proper evening in.</p>
+        <div class="area-points">
+          <div class="area-point"><div class="area-dot"></div><span>Walt Disney World, ~15 min drive</span></div>
+          <div class="area-point"><div class="area-dot"></div><span>Universal Orlando, ~25 min drive</span></div>
+          <div class="area-point"><div class="area-dot"></div><span>SeaWorld, ~20 min drive</span></div>
+          <div class="area-point"><div class="area-dot"></div><span>Orlando Airport (MCO), ~30 min drive</span></div>
+          <div class="area-point"><div class="area-dot"></div><span>Walmart & grocery stores, 5 min drive</span></div>
+        </div>
+      </div>
+      <div class="area-img">
+        <div class="area-img-ph">Kissimmee area photo coming soon</div>
+        <div class="area-img-label">Orlando Area · Florida</div>
+      </div>
+    </div>
+
+    <!-- REVIEWS -->
+    <div class="reviews-section" id="reviews">
+      <div class="gallery-label">Guest Reviews</div>
+      <h2 class="section-mini-title">What families say about staying with us.</h2>
+      <div class="review-card">
+        <div class="review-stars"><span></span><span></span><span></span><span></span><span></span></div>
+        <p class="review-text">"The house was perfect for our family of 9. Spacious, clean and the location made Disney mornings completely stress-free. We'll be back."</p>
+        <div class="review-author">The Johnson Family</div>
+        <div class="review-meta">Chicago, IL · To be replaced with real review</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars"><span></span><span></span><span></span><span></span><span></span></div>
+        <p class="review-text">"Having a full kitchen and proper living room made such a difference after long park days. Far better value than two hotel rooms for our group."</p>
+        <div class="review-author">Sarah & Mike T.</div>
+        <div class="review-meta">Toronto, Canada · To be replaced with real review</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SIDEBAR -->
+  <div class="prop-sidebar">
+    <div class="sidebar-card">
+      <div class="sidebar-card-head">
+        <div class="sidebar-card-title">Book Your Orlando Stay</div>
+        <div class="sidebar-card-sub">Instant confirmation · Contactless check-in</div>
+      </div>
+      <div class="sidebar-card-body">
+        <div class="sidebar-divider"></div>
+        <ul class="sidebar-feature-list">
+          <li>Homes sleeping 8–10 guests</li>
+          <li>3 bedrooms · Full kitchen</li>
+          <li>Orlando Area, Florida</li>
+          <li>Pool access & gym</li>
+          <li>Min. 3 nights</li>
+        </ul>
+        <a href="#book" class="sidebar-book-btn">Check Availability →</a>
+        <p class="sidebar-direct-note">Book direct for the <strong>best rate guaranteed.</strong></p>
+      </div>
+    </div>
+    <div class="sidebar-perks">
+      <div class="sidebar-perks-title">Every Stay Includes</div>
+      <div class="perk-item">
+        <div class="perk-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div><div class="perk-label">Residential community</div><div class="perk-sub">Private, secure, residential</div></div>
+      </div>
+      <div class="perk-item">
+        <div class="perk-icon"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+        <div><div class="perk-label">Contactless check-in</div><div class="perk-sub">Code sent the day before check-in</div></div>
+      </div>
+      <div class="perk-item">
+        <div class="perk-icon"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+        <div><div class="perk-label">Direct communication</div><div class="perk-sub">Always talk to our team</div></div>
+      </div>
+      <div class="perk-item">
+        <div class="perk-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <div><div class="perk-label">~15 min to Disney</div><div class="perk-sub">All major parks within 35 min</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- EXIT POPUP -->
+<div id="exit-overlay" style="display:none;position:fixed;inset:0;background:rgba(20,18,16,0.6);z-index:1000;backdrop-filter:blur(4px);align-items:center;justify-content:center;">
+  <div id="exit-modal" style="background:var(--sand);max-width:480px;width:calc(100% - 40px);border-radius:12px;overflow:hidden;transform:translateY(20px);opacity:0;transition:transform 0.35s ease,opacity 0.35s ease;">
+    <div style="height:160px;background:linear-gradient(135deg,#2C3E50,#4A7A8A);position:relative;">
+      <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(20,18,16,0.5),transparent);"></div>
+      <div style="position:absolute;bottom:16px;left:24px;color:#fff;">
+        <div style="font-size:10px;letter-spacing:0.16em;text-transform:uppercase;opacity:0.65;margin-bottom:4px;">Free Guide</div>
+        <div style="font-family:var(--serif);font-size:22px;font-weight:300;">The Orlando Insider Guide</div>
+      </div>
+      <button onclick="closeExitPopup()" style="position:absolute;top:14px;right:16px;background:rgba(255,255,255,0.15);border:none;color:#fff;width:28px;height:28px;border-radius:50%;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;">×</button>
+    </div>
+    <div style="padding:28px 32px 32px;">
+      <div style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--orange);margin-bottom:12px;">Before you go</div>
+      <h3 style="font-family:var(--serif);font-size:26px;font-weight:300;color:var(--charcoal);line-height:1.3;margin-bottom:12px;">Plan the perfect Orlando trip.</h3>
+      <p style="font-size:14px;color:var(--muted);line-height:1.7;margin-bottom:24px;">Park tips, best restaurants near the attractions, how to avoid the queues and what to skip entirely. <strong style="color:var(--charcoal);">Our local guide, yours free.</strong></p>
+      <div style="display:flex;border-radius:5px;overflow:hidden;border:1px solid var(--sand-border);margin-bottom:12px;">
+        <input type="email" placeholder="Your email address" style="flex:1;padding:13px 16px;border:none;background:#fff;font-family:var(--sans);font-size:14px;outline:none;">
+        <button onclick="submitExitForm()" style="background:var(--orange);border:none;color:#fff;padding:13px 20px;font-family:var(--sans);font-size:13px;font-weight:500;cursor:pointer;white-space:nowrap;">Send me the guide →</button>
+      </div>
+      <div id="exit-success" style="display:none;background:rgba(229,95,44,0.08);border:1px solid rgba(229,95,44,0.2);border-radius:5px;padding:12px 16px;font-size:13px;color:var(--orange-dark);text-align:center;margin-bottom:12px;">✓ Check your inbox, the guide is on its way.</div>
+      <p style="font-size:12px;color:var(--muted-light);text-align:center;">No spam. Unsubscribe anytime.</p>
+      <button onclick="closeExitPopup()" style="display:block;width:100%;margin-top:16px;background:transparent;border:none;font-size:12px;color:var(--muted-light);cursor:pointer;padding:4px;">No thanks, I'll figure it out myself</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-links-row">
+    <a href="/us/">← Back to US</a>
+    <a href="/">All Destinations</a>
+    <a href="/portugal/">Residentas Portugal</a>
+    <a href="#" onclick="openAbout();return false;">About</a>
+    <a href="/contact">Contact</a>
+    <a href="/policies">Policies</a>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-legal">© 2026 Residentas. All rights reserved.</div>
+    <div class="footer-orange-dot"></div>
+  </div>
+</footer>
+
+<script>
+let exitShown=false;
+function showExitPopup(){if(exitShown||localStorage.getItem('residentas_popup_dismissed'))return;exitShown=true;const o=document.getElementById('exit-overlay'),m=document.getElementById('exit-modal');o.style.display='flex';requestAnimationFrame(()=>{m.style.transform='translateY(0)';m.style.opacity='1'});}
+function closeExitPopup(){localStorage.setItem('residentas_popup_dismissed','1');const m=document.getElementById('exit-modal');m.style.transform='translateY(20px)';m.style.opacity='0';setTimeout(()=>{document.getElementById('exit-overlay').style.display='none'},350);}
+function submitExitForm(){localStorage.setItem('residentas_popup_dismissed','1');document.getElementById('exit-success').style.display='block';setTimeout(closeExitPopup,2800);}
+document.addEventListener('mouseleave',e=>{if(e.clientY<=0)showExitPopup();});
+setTimeout(showExitPopup,45000);
+document.getElementById('exit-overlay').addEventListener('click',e=>{if(e.target===document.getElementById('exit-overlay'))closeExitPopup();});
+</script>
+
+<div id="search-widget_IO312PWQ"><script>!function(e,t,a,n,c,r){function s(t){e.console.log("[Guesty Embedded Widget]:",t)}var i,d,l,o,y,m,g,h,p,u;n&&(i=n,d=t.getElementsByTagName("head")[0],(l=t.createElement("link")).rel="stylesheet",l.type="text/css",l.href=i,l.media="all",d.appendChild(l)),o=function(){try{e[a].create(r).catch(function(e){s(e.message)})}catch(e){s(e.message)}},h=!1,y=c,m=function(){h||this.readyState&&"complete"!=this.readyState||(h=!0,o())},(g=t.createElement("script")).type="text/javascript",g.src=y,g.async="true",g.onload=g.onreadystatechange=m,p=g,(u=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,u)}(window,document,"GuestySearchBarWidget","https://s3.amazonaws.com/guesty-frontend-production/search-bar-production.css","https://s3.amazonaws.com/guesty-frontend-production/search-bar-production.js",{"siteUrl":"www.residentas.us","color":"#E55F2C"});</script></div>
+<!-- About Modal US -->
+<div id="about-overlay" style="display:none;position:fixed;inset:0;background:rgba(20,18,16,0.7);z-index:200;backdrop-filter:blur(6px);align-items:center;justify-content:center;padding:24px;">
+  <div id="about-modal" style="background:#FAF7F4;max-width:720px;width:100%;max-height:88vh;overflow-y:auto;border-radius:10px;position:relative;transform:translateY(24px);opacity:0;transition:transform 0.35s ease,opacity 0.35s ease;">
+    <button onclick="closeAbout()" style="position:absolute;top:18px;right:20px;background:none;border:none;font-size:22px;color:#888880;cursor:pointer;line-height:1;z-index:10;">×</button>
+    <div style="padding:52px 56px 48px;">
+      <div style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#E55F2C;margin-bottom:16px;display:flex;align-items:center;gap:10px;"><span style="display:block;width:20px;height:1px;background:#E55F2C;"></span>Our Homes</div>
+      <h2 style="font-family:'Cormorant Garamond',Georgia,serif;font-size:36px;font-weight:300;color:#1C1C1C;line-height:1.2;margin-bottom:20px;">Space to gather.<br>Minutes from the magic.</h2>
+      <p style="font-size:14px;color:#888880;line-height:1.8;margin-bottom:16px;">Our Kissimmee vacation homes are built for groups who want more than a standard hotel room. Multiple bedrooms, full kitchens, open-plan living spaces — and resort-style amenities including a shared pool, gym and clubhouse, all within a private gated community.</p>
+      <p style="font-size:14px;color:#888880;line-height:1.8;margin-bottom:16px;">Every home sleeps between <strong style="color:#1C1C1C;">8 and 10 guests</strong> and is managed directly by us. No platform middlemen. When you book with Residentas, you deal with us — before, during and after your stay.</p>
+      <p style="font-size:14px;color:#888880;line-height:1.8;margin-bottom:32px;">We're located in <strong style="color:#1C1C1C;">The Hub at Westside Reserve</strong>, Kissimmee — approximately 15 minutes from Walt Disney World and within easy reach of Universal, SeaWorld and Orlando's best restaurants. The right base for a family trip that doesn't compromise on space or comfort.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:36px;">
+        <div style="background:#F0EBE4;border-radius:6px;padding:18px 16px;">
+          <div style="font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#E55F2C;margin-bottom:6px;">Sleeps</div>
+          <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:24px;font-weight:300;color:#1C1C1C;margin-bottom:2px;">8 – 10</div>
+          <div style="font-size:11px;color:#888880;">guests per home</div>
+        </div>
+        <div style="background:#F0EBE4;border-radius:6px;padding:18px 16px;">
+          <div style="font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#E55F2C;margin-bottom:6px;">Location</div>
+          <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:24px;font-weight:300;color:#1C1C1C;margin-bottom:2px;">Kissimmee</div>
+          <div style="font-size:11px;color:#888880;">~15 min from Disney</div>
+        </div>
+        <div style="background:#F0EBE4;border-radius:6px;padding:18px 16px;">
+          <div style="font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#E55F2C;margin-bottom:6px;">Managed</div>
+          <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:24px;font-weight:300;color:#1C1C1C;margin-bottom:2px;">Directly</div>
+          <div style="font-size:11px;color:#888880;">by Residentas</div>
+        </div>
+      </div>
+      <a href="#book" onclick="closeAbout();setTimeout(()=>document.getElementById('book').scrollIntoView({behavior:'smooth'}),200);return false;" style="display:inline-block;background:#E55F2C;color:#fff;padding:14px 32px;border-radius:4px;text-decoration:none;font-size:13px;font-weight:500;letter-spacing:0.06em;">Check Availability →</a>
+    </div>
+  </div>
+</div>
+<script>
+function openAbout(){const o=document.getElementById('about-overlay'),m=document.getElementById('about-modal');o.style.display='flex';requestAnimationFrame(()=>{m.style.transform='translateY(0)';m.style.opacity='1';});document.body.style.overflow='hidden';}
+function closeAbout(){const m=document.getElementById('about-modal');m.style.transform='translateY(24px)';m.style.opacity='0';setTimeout(()=>{document.getElementById('about-overlay').style.display='none';document.body.style.overflow='';},300);}
+document.getElementById('about-overlay').addEventListener('click',e=>{if(e.target===document.getElementById('about-overlay'))closeAbout();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeAbout();});
+</script>
+</body>
+</html>
